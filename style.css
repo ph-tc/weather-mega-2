@@ -123,13 +123,11 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(12%, #fff), to(#64cefd));
-	background-image: -webkit-linear-gradient(left top, #fff 12%, #64cefd 100%);
-	background-image: -o-linear-gradient(left top, #fff 12%, #64cefd 100%);
-	background-image: linear-gradient(to right bottom, #fff 12%, #64cefd 100%);
+	background-color: #d9fafe;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	overflow: hidden;
 }
 
 img {
@@ -141,7 +139,6 @@ img {
 /* OFFER */
 
 .offer {
-	display: table-row;
 	width: 100%;
 	font-size: 0;
 	text-align: center;
@@ -156,7 +153,7 @@ img {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 9px;
 	line-height: 1;
-	color: #444;
+	color: #eee;
 }
 
 .offer a {
@@ -168,10 +165,7 @@ img {
 .header {
 	display: table-row;
 	width: 100%;
-	background-image: -webkit-gradient(linear, left top, right bottom, from(#eeba00), to(#da5315));
-	background-image: -webkit-linear-gradient(left top, #eeba00, #da5315);
-	background-image: -o-linear-gradient(left top, #eeba00, #da5315);
-	background-image: linear-gradient(to right bottom, #eeba00, #da5315);
+	background-color: #2885B8;
 }
 
 .header .inner {
