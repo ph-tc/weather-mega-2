@@ -117,7 +117,7 @@ html {
 }
 
 body {
-	position: relative;
+	position: fixed;
 	display: table;
 	height: 100%;
 	width: 100%;
@@ -141,12 +141,14 @@ img {
 .offer {
 	width: 100%;
 	font-size: 0;
-	text-align: center;
+	background-color: #2885B8;
 }
 
 .offer .inner {
 	position: relative;
 	width: 100%;
+	padding: 2px;
+	text-align: center;
 }
 
 .offer span, .offer a {
@@ -168,7 +170,7 @@ img {
 	background-color: #2885B8;
 }
 
-.header .inner {
+.header > .inner {
 	position: relative;
 	display: table;
 	width: 100%;
@@ -249,12 +251,12 @@ img {
 
 /*LOCATION*/
 
-.location-wrapper {
-	display: table-row;
+.feel-wrapper {
 	width: 100%;
+	margin-bottom: 10px;
 }
 
-.location-wrapper .inner {
+.feel-wrapper .inner {
 	padding: 0 10px;
 }
 
@@ -276,14 +278,13 @@ img {
 	vertical-align: middle;
 }
 
-.location-wrapper .city {
-	display: table-cell;
+.feel-wrapper .feel {
 	width: 100%;
 	vertical-align: middle;
-	text-align: right;
+	text-align: center;
 }
 
-.location-wrapper .city a {
+.feel-wrapper .feel span {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
@@ -292,8 +293,8 @@ img {
 	text-align: right;
 }
 
-@media screen and (max-height: 340px) {
-	.location-wrapper {
+@media screen and (max-height: 570px) {
+	.feel-wrapper {
 		display: none;
 	}
 }
@@ -306,10 +307,10 @@ img {
 	height: 100%;
 }
 
-.temperature-wrapper .inner {
+.temperature-wrapper > .inner {
 	display: table-cell;
 	width: 100%;
-	padding: 10px 0;
+	padding: 30px 0;
 	text-align: center;
 	vertical-align: top;
 }
@@ -317,7 +318,7 @@ img {
 .temperature-wrapper .temperature {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .temperature-wrapper .temperature::after {
@@ -358,19 +359,7 @@ img {
 	color: #333;
 }
 
-@media screen and (max-height: 435px) {
-	.temperature-wrapper .inner {
-		padding-top: 30px;
-	}
-}
-
-@media screen and (max-height: 770px) {
-	.temperature-wrapper .inner {
-		padding-top: 10px;
-	}
-}
-
-@media screen and (max-height: 740px) {
+@media screen and (max-height: 720px) {
 	.temperature-wrapper .description {
 		display: none;
 	}
@@ -382,7 +371,7 @@ img {
 	}
 }
 
-@media screen and (max-height: 660px) {
+@media screen and (max-height: 500px) {
 	.temperature-wrapper .temperature::after {
 		-webkit-transform: translate(10%, -50%);
 		-ms-transform: translate(10%, -50%);
@@ -397,7 +386,7 @@ img {
 	}
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 420px) {
 	.temperature-wrapper .temperature {
 		display: none;
 	}
@@ -424,11 +413,6 @@ img {
 	text-transform: uppercase;
 	border: none;
 	background-color: transparent;
-	background-image:	url('./arrow-dark.png');
-	-webkit-background-size: 15px;
-	background-size: 15px;
-	background-position: 90% center;
-	background-repeat: no-repeat;
 }
 
 .details {
@@ -470,26 +454,21 @@ img {
 	background-color: transparent;
 	border: none;
 	text-transform: uppercase;
-	background-image:	url('./arrow-dark.png');
-	-webkit-background-size: 15px;
-	background-size: 15px;
-	background-position: 90% center;
-	background-repeat: no-repeat;
 }
 
-@media screen and (max-height: 585px) {
+@media screen and (max-height: 500px) {
 	.details tr:nth-last-child(2){
 		display: none;
 	}
 }
 
-@media screen and (max-height: 690px) {
+@media screen and (max-height: 610px) {
 	.details tr:nth-last-child(1){
 		display: none;
 	}
 }
 
-@media screen and (max-height: 480px) {
+@media screen and (max-height: 500px) {
 	.details .wrapper {
 		display: none;
 	}
@@ -569,6 +548,8 @@ img {
 	-webkit-background-size: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
+	-webkit-filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.4));
+	filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.4));
 }
 
 .main .cancel {
@@ -594,13 +575,13 @@ img {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 10px;
 	line-height: 1;
-	color: #444;
+	color: #333;
 }
 
 @media screen and (max-height: 200px) and (orientation: landscape) {
 	.main .btn-wrapper {
 		top: auto;
-		bottom: 50px;
+		bottom: 55px;
 		-webkit-transform: translate(0, -27px);
 		-ms-transform: translate(0, -27px);
 		transform: translate(0, -27px);
@@ -611,11 +592,13 @@ img {
 
 .rules {
 	display: table-row;
+	background-color: #d9fafe;
 }
 
 .rules .inner {
 	position: relative;
-	padding: 2px 0;
+	padding: 2px;
+	text-align: center;
 }
 
 .rules p, .rules a {
@@ -623,7 +606,6 @@ img {
 	font-weight: normal;
 	font-size: 9px;
 	line-height: 1;
-	text-align: center;
 	color: #444;
 }
 
